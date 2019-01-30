@@ -1,9 +1,9 @@
 #REV1.0
 
-default:test
+default:addition
 
-test: add.o main.o
-	g++ -g -o test add.o main.o
+addition: add.o main.o
+	g++ -g -o addition add.o main.o
 
 add.o: add.cpp
 	g++ -g -c add.cpp
