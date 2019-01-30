@@ -1,10 +1,10 @@
 #include <iostream>
 #include "op.h"
-using namespace std; 
+using namespace std;
 
 int main ()
 {
-int q,a,b,z;
+int q,a,b,z = 0;
 
 cout << "1: add" << endl;
 cout << "2: sub" << endl;
@@ -13,6 +13,9 @@ cout << "4: mul" << endl;
 
 cin >> q;
 
+
+if (q >= 1 && q <= 4)
+{
 	if (q == 1)
 		{
 		cout << "Please enter to numbers which will be summed!" << endl;
@@ -53,11 +56,12 @@ cin >> q;
                 z = mul (a,b);
                 }
 
-	else
-	{
-	cout << "Bitte eine Nummer von 1 bis 4 angeben!" << endl;
-	return 0;
-	}
+}
+else
+{
+cout << "Bitte eine Nummer von 1 bis 4 angeben!" << endl;
+return 0;
+}
 
 cout << "The result is " << z << endl;
 }
