@@ -53,8 +53,12 @@ cin >> q;
                 z = mul (a,b);
                 }
 
+	else
+	{
+	cout << "Bitte eine Nummer von 1 bis 4 angeben!" << endl;
+	return 0;
+	}
 
- 
 cout << "The result is " << z << endl;
 }
 
