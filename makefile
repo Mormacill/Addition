@@ -1,14 +1,14 @@
-#REV1.0
+#REV2.0
 
-default:addition
+default:calc
 
-addition: add.o main.o
-	g++ -g -o addition add.o main.o
+calc: op.o main.o
+	g++ -g -o calc op.o main.o
 
-add.o: add.cpp
-	g++ -g -c add.cpp
+op.o: op.cpp
+	g++ -g -c op.cpp
 
-main.o: main.cpp add.h
+main.o: main.cpp op.h
 	g++ -g -c main.cpp
 
 clean:
